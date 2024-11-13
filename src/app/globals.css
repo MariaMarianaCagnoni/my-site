@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sh-class: #0f7dd6;
+  --sh-identifier: #9333ea;
+  --sh-sign: #71717a;
+  --sh-property: #2563eb;
+  --sh-entity: #0d9488;
+  --sh-jsxliterals: #7c3aed;
+  --sh-string: #0891b2;
+  --sh-keyword: #dc2626;
+  --sh-comment: #64748b;
+}
+
+@layer base {
+  html,
+  body {
+    @apply bg-zinc-50 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-200;
+  }
+
+  article {
+    @apply mb-12;
+  }
+
+  article > h1,
+  article > h2,
+  article > h3,
+  article > h4,
+  article > h5,
+  article > h6 {
+    @apply text-zinc-950 font-bold my-6 dark:text-zinc-200;
+  }
+
+  article h2 {
+    @apply uppercase mt-12 font-bold;
+  }
+
+  article p {
+    @apply text-zinc-950 dark:text-zinc-200 my-4;
+  }
+
+  article ul,
+  article ol {
+    @apply text-zinc-950 dark:text-zinc-200 pl-8 my-4;
+  }
+
+  article li {
+    @apply mb-2;
+  }
+
+  article ul {
+    @apply list-disc;
+  }
+
+  article ol {
+    @apply list-decimal;
+  }
+
+  article blockquote {
+    @apply border-l-4 border-emerald-600 dark:border-sky-600 pl-4 my-4;
+  }
+
+  article :not(pre) > code {
+    @apply rounded ring-1 ring-zinc-950 dark:ring-zinc-200 px-1.5 py-0.5 mx-0.5 text-sm select-all text-nowrap;
+  }
+
+  article pre {
+    @apply p-4 my-4 overflow-x-auto;
+  }
+
+  article a {
+    @apply underline underline-offset-2 decoration-emerald-600 dark:decoration-sky-600 font-bold;
+  }
+
+  button,
+  a {
+    @apply active:translate-y-1 transition-all;
+  }
+}
