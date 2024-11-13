@@ -47,13 +47,13 @@ const externalLinks: Link[] = [
     url: "https://github.com/MariaMarianaCagnoni",
     Icon: <SiGithub />,
   },
- 
+
   {
     description: "Bluesky",
     url: "https://bsky.app/profile/lostcausee.bsky.social",
     Icon: <BskyLogo />,
   },
-  
+
 ];
 
 const ExternalLink = (link: Link) => {
@@ -77,7 +77,6 @@ const internalLinks = [
     description: "Explore my projects",
     url: "/projects",
   },
-
   {
     description: "Get to know me",
     url: "/about",
