@@ -117,8 +117,8 @@ export default function HomePage() {
         </div>
         <div className="flex gap-2 flex-col">
           <a
-            href="/cv2024.pdf"
-            download="cv2024.pdf"
+            href="projects\curriculo.pdf"
+            download="curriculo.pdf"
             className="bg-zinc-900 dark:bg-zinc-200 p-4 text-zinc-100 dark:text-zinc-900 flex flex-col sm:flex-row items-center gap-3 hover:bg-zinc-700 dark:hover:bg-zinc-400 transition-all"
           >
             <span className="text-nowrap">Download CV</span>
